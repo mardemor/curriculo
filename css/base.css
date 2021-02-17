@@ -1,0 +1,11 @@
+body {
+    display: grid;
+    grid-template-areas: 
+        'cabecalho cabecalho cabecalho'
+        'principal principal perfil'
+        'rodape rodape rodape';
+    grid-template-columns: 1fr 1fr 1fr;
+    /* grid-template-rows: 1fr 1fr 1fr; */
+    /*background-color:#EEEECF;*/
+    font-size: 16px;
+}

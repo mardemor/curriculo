@@ -1,0 +1,876 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/cabecalho.css">
+    <link rel="stylesheet" href="css/principal.css">
+    <link rel="stylesheet" href="css/perfil.css">
+    <link rel="stylesheet" href="css/rodape.css">
+    <link rel="stylesheet" href="css/cartao.css">
+    <link rel="stylesheet" href="css/responsivo.css">
+    <title>Currículo - Marcelo de Moraes</title>
+</head>
+
+<body>
+
+    <header class="cabecalho">
+        <nav class="navbar navbar-expand-sm navbar-dark cabecalho__menu">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Curriculum</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                        <a class="nav-link cabecalho__menu__link" href="#pessoal">Pessoal</a>
+                        <a class="nav-link cabecalho__menu__link" href="#profissional">Profissional</a>
+                        <a class="nav-link cabecalho__menu__link" href="#academico">Acadêmico</a>
+                        <a class="nav-link cabecalho__menu__link" href="#cursos">Cursos</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <aside class="container perfil">
+        <img class="perfil__foto" src="img/photo.jpg">
+        <h1 class="perfil__titulo">Marcelo de Moraes</h1>
+        <p class="perfil__descricao">Profissional da área negócios, segmento bancário, formado em Sistemas de
+            Informação, a procura de oportunidade para trabalhar como Desenvolvedor de Sistemas.</p>
+        <div class="perfil__habilidades">Skills: Lógica, HTML5, CSS3, Javascript ECMA6, SASS, Bootstrap, Performance
+            WEB, Java, C# e PHP.
+        </div>
+    </aside>
+
+    <main class="container principal">
+
+        <section class="cartao" id="pessoal">
+            <div class="cartao__cabecalho">Dados Pessoais</div>
+            <div class="card card-body cartao__corpo">
+                <ul class="list-group list-group-flush cartao__lista">
+                    <li class="list-group-item cartao__lista__item"><label class="cartao__etiqueta">Nome</label>
+                        Marcelo de Moraes</li>
+                    <li class="list-group-item cartao__lista__item"><label class="cartao__etiqueta">Genero</label>
+                        Masculino</li>
+                    <li class="list-group-item cartao__lista__item"><label class="cartao__etiqueta">Data de
+                            nascimento</label> 26/11/1972</li>
+                </ul>
+                <h4 class="cartao__titulo">Residência</h4>
+                <ul class="list-group list-group-flush cartao__lista">
+                    <li class="list-group-item cartao__lista__item">
+                        <label class="cartao__etiqueta">Bairro</label> Santo Amaro (Zona Sul)
+                    </li>
+                    <li class="list-group-item cartao__lista__item"><label class="cartao__etiqueta">Cidade</label> São
+                        Paulo - SP</li>
+                    <li class="list-group-item cartao__lista__item"><label class="cartao__etiqueta">País</label>
+                        Brasil</li>
+                </ul>
+                <h4 class="cartao__titulo">Contatos</h4>
+                <ul class="list-group list-group-flush cartao__lista">
+                    <li class="list-group-item cartao__lista__item">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-envelope-fill" viewBox="0 0 16 16">
+                            <path
+                                d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555zM0 4.697v7.104l5.803-3.558L0 4.697zM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757zm3.436-.586L16 11.801V4.697l-5.803 3.546z" />
+                        </svg>
+                        <a href="mailto:marcelodemoraes9@hotmail.com">marcelodemoraes9@hotmail.com</a>
+                    </li>
+                    <li class="list-group-item cartao__lista__item">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-github" viewBox="0 0 16 16">
+                            <path
+                                d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z" />
+                        </svg>
+                        <a href="https://github.com/mardemor" target="_blank">GitHub</a>
+                    </li>
+                    <li class="list-group-item cartao__lista__item">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-linkedin" viewBox="0 0 16 16">
+                            <path
+                                d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z" />
+                        </svg>
+                        <a href="https://www.linkedin.com/in/marcelo-de-moraes-31691a22/" target="_blank">Linkedin</a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="cartao" id="profissional">
+            <div class="cartao__cabecalho">Dados Profissionais</div>
+            <div class="card card-body cartao__corpo">
+                <h4 class="cartao__titulo">Último Trabalho</h4>
+                <ul class="list-group list-group-flush cartao__lista">
+                    <li class="list-group-item cartao__lista__item"><label class="cartao__etiqueta">Empresa</label>
+                        Banco Volkswagen S.A.</li>
+                    <li class="list-group-item cartao__lista__item"><label class="cartao__etiqueta">Período</label>
+                        Jul/1996 a Out/2020</li>
+                    <li class="list-group-item cartao__lista__item"><label class="cartao__etiqueta">Último
+                            Cargo</label> Técnico de Backoffice de
+                        Crédito
+                    </li>
+                    <li class="list-group-item cartao__lista__item"><label class="cartao__etiqueta">Experiência</label>
+                        Área de negócios do setor
+                        bancário e corretagem de seguros. Atuação direcionada ao mercado automobilístico. Análise de
+                        crédito,
+                        vendas, negociação e suporte. Foco no cliente, solução de problemas e entrega de resultados
+                        consistentes.
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="cartao" id="academico">
+            <div class="cartao__cabecalho">Dados Acadêmicos</div>
+            <div class="card card-body cartao__corpo">
+                <h4 class="cartao__titulo">Nível Superior Completo</h4>
+                <ul class="list-group list-group-flush cartao__lista">
+                    <li class="list-group-item cartao__lista__item"><label class="cartao__etiqueta">Formação</label>
+                        Bacharel em Sistemas de Informação
+                    </li>
+                    <li class="list-group-item cartao__lista__item"><label class="cartao__etiqueta">Instituição</label>
+                        Universidade Bandeirante SP</li>
+                    <li class="list-group-item cartao__lista__item"><label class="cartao__etiqueta">Período</label>
+                        Jan/2007 a Dez/2010</li>
+                </ul>
+                <h4 class="cartao__titulo">Idiomas</h4>
+                <ul class="list-group list-group-flush cartao__lista">
+                    <li class="list-group-item cartao__lista__item">Português fluente</li>
+                    <li class="list-group-item cartao__lista__item">Inglês leitura e escrita</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="cursos">
+            <h3 class="titulo-secundario">Cursos Alura Caelum</h3>
+
+            <article class="cartao">
+                <a class="cartao__cabecalho" role="button" data-bs-toggle="collapse" href="#collapseLogica"
+                    aria-expanded="false">
+                    Lógica de programação
+                </a>
+                <div class="collapse" id="collapseLogica">
+                    <div class="card card-body cartao__corpo">
+                        <h4 class="cartao__titulo">Parte 1 - Os primeiros programas com Javascript e
+                            HTML
+                        </h4>
+                        <h6 class="cartao__subtitulo">16 horas - Nov/2020</h6>
+                        <ul class="list-group list-group-flush cartao__lista">
+                            <li class="list-group-item cartao__lista__item">Dê seus primeiros passos de maneira
+                                prática!
+                            </li>
+                            <li class="list-group-item cartao__lista__item">Inicie na programação com
+                                JavaScript no seu
+                                Navegador</li>
+                            <li class="list-group-item cartao__lista__item">Entenda variáveis e seu uso</li>
+                            <li class="list-group-item cartao__lista__item">Repita tarefas com laços, loops,
+                                fors e
+                                whiles</li>
+                            <li class="list-group-item cartao__lista__item">Mostre seus programas para seus
+                                colegas</li>
+                        </ul>
+                        <h4 class="cartao__titulo">Parte 2 - pratique com desenhos, animações e um jogo
+                        </h4>
+                        <h6 class="cartao__subtitulo">10 horas - Nov/2020</h6>
+                        <ul class="list-group list-group-flush cartao__lista">
+                            <li class="list-group-item cartao__lista__item">Continue a praticar lógica com
+                                JavaScript
+                            </li>
+                            <li class="list-group-item cartao__lista__item">Use e abuse de funções para
+                                facilitar seu
+                                trabalho
+                            </li>
+                            <li class="list-group-item cartao__lista__item">Conheça o Canvas para gerar
+                                desenhos e
+                                animações
+                            </li>
+                            <li class="list-group-item cartao__lista__item">Revise conceitos importantes na
+                                programação
+                            </li>
+                            <li class="list-group-item cartao__lista__item">Crie seu primeiro jogo!</li>
+                        </ul>
+                    </div>
+                </div>
+            </article>
+
+            <article class="cartao">
+                <a class="cartao__cabecalho" role="button" data-bs-toggle="collapse" href="#collapseGit"
+                    aria-expanded="false">
+                    Git e Github
+                </a>
+                <div class="collapse" id="collapseGit">
+                    <div class="card card-body cartao__corpo">
+                        <h4 class="cartao__titulo">Git e Github: Controle e compartilhe seu código</h4>
+                        <h6 class="cartao__subtitulo">6 horas - Nov/2020</h6>
+                        <ul class="list-group list-group-flush cartao__lista">
+                            <li class="list-group-item cartao__lista__item">O que é Git e Github?</li>
+                            <li class="list-group-item cartao__lista__item">Entenda um sistema de controle de
+                                versão
+                            </li>
+                            <li class="list-group-item cartao__lista__item">Salve e recupere seu código em
+                                diferentes
+                                versões
+                            </li>
+                            <li class="list-group-item cartao__lista__item">Resolva merges e conflitos</li>
+                            <li class="list-group-item cartao__lista__item">Trabalhe com diferentes branches
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </article>
+
+            <article class="cartao">
+                <a class="cartao__cabecalho" role="button" data-bs-toggle="collapse" href="#collapseHtml"
+                    aria-expanded="false">
+                    HTML5 e CSS3
+                </a>
+                <div class="collapse" id="collapseHtml">
+                    <div class="card card-body cartao__corpo">
+                        <h4 class="cartao__titulo">Parte 1: A primeira página da Web</h4>
+                        <h6 class="cartao__subtitulo">8 horas - Nov/2020</h6>
+                        <ul class="list-group list-group-flush cartao__lista">
+                            <li class="list-group-item cartao__lista__item">Aprenda o que é o HTML e o CSS</li>
+                            <li class="list-group-item cartao__lista__item">Entenda a estrutura básica de um
+                                arquivo
+                                HTML</li>
+                            <li class="list-group-item cartao__lista__item">Utilize o navegador para
+                                inspecionar
+                                elementos</li>
+                            <li class="list-group-item cartao__lista__item">Aprenda a definir estilos para
+                                elementos
+                                usando o CSS</li>
+                            <li class="list-group-item cartao__lista__item">Desenvolva um página Web</li>
+                        </ul>
+                        <h4 class="cartao__titulo">Parte 2: Posicionamento, listas e navegação</h4>
+                        <h6 class="cartao__subtitulo">8 horas - Nov/2020</h6>
+                        <ul class="list-group list-group-flush cartao__lista">
+                            <li class="list-group-item cartao__lista__item">Aprenda a estrutura da página HTML
+                            </li>
+                            <li class="list-group-item cartao__lista__item">Navegue entre páginas web</li>
+                            <li class="list-group-item cartao__lista__item">Conheça reset.css e o
+                                posicionamento pelo
+                                CSS</li>
+                            <li class="list-group-item cartao__lista__item">Entenda a diferença entre inline e
+                                block
+                            </li>
+                            <li class="list-group-item cartao__lista__item">Lide com bordas e pseudo-classes
+                                CSS</li>
+                        </ul>
+                        <h4 class="cartao__titulo">Parte 3: Trabalhando com formulários e tabelas</h4>
+                        <h6 class="cartao__subtitulo">8 horas - Nov/2020</h6>
+                        <ul class="list-group list-group-flush cartao__lista">
+                            <li class="list-group-item cartao__lista__item">Crie formulários complexos</li>
+                            <li class="list-group-item cartao__lista__item">Trabalhe com campos para celulares
+                            </li>
+                            <li class="list-group-item cartao__lista__item">Apresente informações em tabelas
+                            </li>
+                            <li class="list-group-item cartao__lista__item">Use estilos para formulários,
+                                campos e
+                                tabelas</li>
+                            <li class="list-group-item cartao__lista__item">Entenda a hierarquia no CSS</li>
+                            <li class="list-group-item cartao__lista__item">Trabalhe com transformações e
+                                transições
+                            </li>
+                        </ul>
+                        <h4 class="cartao__titulo">Parte 4: Avançando no CSS</h4>
+                        <h6 class="cartao__subtitulo">8 horas - Nov/2020</h6>
+                        <ul class="list-group list-group-flush cartao__lista">
+                            <li class="list-group-item cartao__lista__item">Importe conteúdo externo na sua
+                                página HTML,
+                                como fontes, vídeos e mapas</li>
+                            <li class="list-group-item cartao__lista__item">Conheça pseudo-classes e
+                                pseudo-elementos
+                            </li>
+                            <li class="list-group-item cartao__lista__item">Use seletores de CSS avançados</li>
+                            <li class="list-group-item cartao__lista__item">Saiba como lidar com opacidade e
+                                sombra</li>
+                            <li class="list-group-item cartao__lista__item">Entenda sobre o Viewport e design
+                                responsivo
+                            </li>
+                        </ul>
+                        <div class="cartao__links">
+                            <a href="https://github.com/mardemor/alura-html-css" class="cartao__links__item"
+                                target="_blank">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-github" viewBox="0 0 16 16">
+                                    <path
+                                        d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z" />
+                                </svg>
+                                código
+                            </a>
+                            <a href="https://mardemor.github.io/alura-html-css/" class="cartao__links__item"
+                                target="_blank">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-globe" viewBox="0 0 16 16">
+                                    <path
+                                        d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm7.5-6.923c-.67.204-1.335.82-1.887 1.855A7.97 7.97 0 0 0 5.145 4H7.5V1.077zM4.09 4a9.267 9.267 0 0 1 .64-1.539 6.7 6.7 0 0 1 .597-.933A7.025 7.025 0 0 0 2.255 4H4.09zm-.582 3.5c.03-.877.138-1.718.312-2.5H1.674a6.958 6.958 0 0 0-.656 2.5h2.49zM4.847 5a12.5 12.5 0 0 0-.338 2.5H7.5V5H4.847zM8.5 5v2.5h2.99a12.495 12.495 0 0 0-.337-2.5H8.5zM4.51 8.5a12.5 12.5 0 0 0 .337 2.5H7.5V8.5H4.51zm3.99 0V11h2.653c.187-.765.306-1.608.338-2.5H8.5zM5.145 12c.138.386.295.744.468 1.068.552 1.035 1.218 1.65 1.887 1.855V12H5.145zm.182 2.472a6.696 6.696 0 0 1-.597-.933A9.268 9.268 0 0 1 4.09 12H2.255a7.024 7.024 0 0 0 3.072 2.472zM3.82 11a13.652 13.652 0 0 1-.312-2.5h-2.49c.062.89.291 1.733.656 2.5H3.82zm6.853 3.472A7.024 7.024 0 0 0 13.745 12H11.91a9.27 9.27 0 0 1-.64 1.539 6.688 6.688 0 0 1-.597.933zM8.5 12v2.923c.67-.204 1.335-.82 1.887-1.855.173-.324.33-.682.468-1.068H8.5zm3.68-1h2.146c.365-.767.594-1.61.656-2.5h-2.49a13.65 13.65 0 0 1-.312 2.5zm2.802-3.5a6.959 6.959 0 0 0-.656-2.5H12.18c.174.782.282 1.623.312 2.5h2.49zM11.27 2.461c.247.464.462.98.64 1.539h1.835a7.024 7.024 0 0 0-3.072-2.472c.218.284.418.598.597.933zM10.855 4a7.966 7.966 0 0 0-.468-1.068C9.835 1.897 9.17 1.282 8.5 1.077V4h2.355z" />
+                                </svg>
+                                site
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <article class="cartao">
+                <a class="cartao__cabecalho" role="button" data-bs-toggle="collapse" href="#collapsecss"
+                    aria-expanded="false">
+                    CSS Arquitetura
+                </a>
+                <div class="collapse" id="collapsecss">
+                    <div class="card card-body cartao__corpo">
+                        <h4 class="cartao__titulo">Arquitetura CSS: Descomplicando os problemas</h4>
+                        <h6 class="cartao__subtitulo">8 horas - Dez/2020</h6>
+                        <ul class="list-group list-group-flush cartao__lista">
+                            <li class="list-group-item cartao__lista__item">Simplifique a organização de seus
+                                arquivos CSS</li>
+                            <li class="list-group-item cartao__lista__item">Crie arquiteturas CSS simples e
+                                robusta</li>
+                            <li class="list-group-item cartao__lista__item">Aprenda boas práticas e
+                                metodologias sobre CSS</li>
+                            <li class="list-group-item cartao__lista__item">Metodologia BEM</li>
+                            <li class="list-group-item cartao__lista__item">Boas práticas com imagens</li>
+                            <li class="list-group-item cartao__lista__item">Deixe o seu site responsivo</li>
+                        </ul>
+                        <div class="cartao__links">
+                            <a href="https://github.com/mardemor/alura-css-arquitetura" class="cartao__links__item"
+                                target="_blank">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-github" viewBox="0 0 16 16">
+                                    <path
+                                        d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z" />
+                                </svg>
+                                código
+                            </a>
+                            <a href="https://mardemor.github.io/alura-css-arquitetura/" class="cartao__links__item"
+                                target="_blank">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-globe" viewBox="0 0 16 16">
+                                <path
+                                    d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm7.5-6.923c-.67.204-1.335.82-1.887 1.855A7.97 7.97 0 0 0 5.145 4H7.5V1.077zM4.09 4a9.267 9.267 0 0 1 .64-1.539 6.7 6.7 0 0 1 .597-.933A7.025 7.025 0 0 0 2.255 4H4.09zm-.582 3.5c.03-.877.138-1.718.312-2.5H1.674a6.958 6.958 0 0 0-.656 2.5h2.49zM4.847 5a12.5 12.5 0 0 0-.338 2.5H7.5V5H4.847zM8.5 5v2.5h2.99a12.495 12.495 0 0 0-.337-2.5H8.5zM4.51 8.5a12.5 12.5 0 0 0 .337 2.5H7.5V8.5H4.51zm3.99 0V11h2.653c.187-.765.306-1.608.338-2.5H8.5zM5.145 12c.138.386.295.744.468 1.068.552 1.035 1.218 1.65 1.887 1.855V12H5.145zm.182 2.472a6.696 6.696 0 0 1-.597-.933A9.268 9.268 0 0 1 4.09 12H2.255a7.024 7.024 0 0 0 3.072 2.472zM3.82 11a13.652 13.652 0 0 1-.312-2.5h-2.49c.062.89.291 1.733.656 2.5H3.82zm6.853 3.472A7.024 7.024 0 0 0 13.745 12H11.91a9.27 9.27 0 0 1-.64 1.539 6.688 6.688 0 0 1-.597.933zM8.5 12v2.923c.67-.204 1.335-.82 1.887-1.855.173-.324.33-.682.468-1.068H8.5zm3.68-1h2.146c.365-.767.594-1.61.656-2.5h-2.49a13.65 13.65 0 0 1-.312 2.5zm2.802-3.5a6.959 6.959 0 0 0-.656-2.5H12.18c.174.782.282 1.623.312 2.5h2.49zM11.27 2.461c.247.464.462.98.64 1.539h1.835a7.024 7.024 0 0 0-3.072-2.472c.218.284.418.598.597.933zM10.855 4a7.966 7.966 0 0 0-.468-1.068C9.835 1.897 9.17 1.282 8.5 1.077V4h2.355z" />
+                            </svg>
+                            site
+                        </a>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <article class="cartao">
+                <a class="cartao__cabecalho" role="button" data-bs-toggle="collapse" href="#collapseflex"
+                    aria-expanded="false">
+                    CSS Flexbox
+                </a>
+                <div class="collapse" id="collapseflex">
+                    <div class="card card-body cartao__corpo">
+                        <h4 class="cartao__titulo">CSS Flexbox: Posicione elementos na tela</h4>
+                        <h6 class="cartao__subtitulo">9 horas - Dez/2020</h6>
+                        <ul class="list-group list-group-flush cartao__lista">
+                            <li class="list-group-item cartao__lista__item">Aprenda a famosa especificação
+                                flexible box para posicionar seus elementos na página
+                            </li>
+                            <li class="list-group-item cartao__lista__item">Entenda as diversas propriedades do
+                                flexbox e como usá-las</li>
+                            <li class="list-group-item cartao__lista__item">Entenda como as propriedades do
+                                flexbox substituem float, inline e inline-block</li>
+                            <li class="list-group-item cartao__lista__item">Elabore um site responsivo com
+                                flexbox</li>
+                        </ul>
+                        <div class="cartao__links">
+                            <a href="https://github.com/mardemor/alura-css-flexbox" class="cartao__links__item"
+                                target="_blank">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-github" viewBox="0 0 16 16">
+                                    <path
+                                        d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z" />
+                                </svg>
+                                código
+                            </a>
+                            <a href="https://mardemor.github.io/alura-css-flexbox/" class="cartao__links__item"
+                                target="_blank">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-globe" viewBox="0 0 16 16">
+                                <path
+                                    d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm7.5-6.923c-.67.204-1.335.82-1.887 1.855A7.97 7.97 0 0 0 5.145 4H7.5V1.077zM4.09 4a9.267 9.267 0 0 1 .64-1.539 6.7 6.7 0 0 1 .597-.933A7.025 7.025 0 0 0 2.255 4H4.09zm-.582 3.5c.03-.877.138-1.718.312-2.5H1.674a6.958 6.958 0 0 0-.656 2.5h2.49zM4.847 5a12.5 12.5 0 0 0-.338 2.5H7.5V5H4.847zM8.5 5v2.5h2.99a12.495 12.495 0 0 0-.337-2.5H8.5zM4.51 8.5a12.5 12.5 0 0 0 .337 2.5H7.5V8.5H4.51zm3.99 0V11h2.653c.187-.765.306-1.608.338-2.5H8.5zM5.145 12c.138.386.295.744.468 1.068.552 1.035 1.218 1.65 1.887 1.855V12H5.145zm.182 2.472a6.696 6.696 0 0 1-.597-.933A9.268 9.268 0 0 1 4.09 12H2.255a7.024 7.024 0 0 0 3.072 2.472zM3.82 11a13.652 13.652 0 0 1-.312-2.5h-2.49c.062.89.291 1.733.656 2.5H3.82zm6.853 3.472A7.024 7.024 0 0 0 13.745 12H11.91a9.27 9.27 0 0 1-.64 1.539 6.688 6.688 0 0 1-.597.933zM8.5 12v2.923c.67-.204 1.335-.82 1.887-1.855.173-.324.33-.682.468-1.068H8.5zm3.68-1h2.146c.365-.767.594-1.61.656-2.5h-2.49a13.65 13.65 0 0 1-.312 2.5zm2.802-3.5a6.959 6.959 0 0 0-.656-2.5H12.18c.174.782.282 1.623.312 2.5h2.49zM11.27 2.461c.247.464.462.98.64 1.539h1.835a7.024 7.024 0 0 0-3.072-2.472c.218.284.418.598.597.933zM10.855 4a7.966 7.966 0 0 0-.468-1.068C9.835 1.897 9.17 1.282 8.5 1.077V4h2.355z" />
+                            </svg>
+                            site
+                        </a>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <article class="cartao">
+                <a class="cartao__cabecalho" role="button" data-bs-toggle="collapse" href="#collapsegrid"
+                    aria-expanded="false">
+                    CSS Grid
+                </a>
+                <div class="collapse" id="collapsegrid">
+                    <div class="card card-body cartao__corpo">
+                        <h4 class="cartao__titulo">CSS Grid: Simplificando layouts</h4>
+                        <h6 class="cartao__subtitulo">8 horas - Dez/2020</h6>
+                        <ul class="list-group list-group-flush cartao__lista">
+                            <li class="list-group-item cartao__lista__item">Simplifique a criação de layouts
+                                complexos.</li>
+                            <li class="list-group-item cartao__lista__item">Posicione elementos com mais
+                                facilidade.</li>
+                            <li class="list-group-item cartao__lista__item">Utilize grid para calcular e
+                                alinhar elementos.</li>
+                            <li class="list-group-item cartao__lista__item">Crie templates com mais eficiência
+                                e simplicidade.</li>
+                            <li class="list-group-item cartao__lista__item">Diga para os elementos onde eles
+                                devem se posicionar.</li>
+                            <li class="list-group-item cartao__lista__item">Diga para os elementos onde eles
+                                devem começar e terminar.</li>
+                        </ul>
+                        <div class="cartao__links">
+                            <a href="https://github.com/mardemor/alura-css-grid" class="cartao__links__item"
+                                target="_blank">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-github" viewBox="0 0 16 16">
+                                    <path
+                                        d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z" />
+                                </svg>
+                                código
+                            </a>
+                            <a href="https://mardemor.github.io/alura-css-grid/" class="cartao__links__item"
+                                target="_blank">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-globe" viewBox="0 0 16 16">
+                                <path
+                                    d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm7.5-6.923c-.67.204-1.335.82-1.887 1.855A7.97 7.97 0 0 0 5.145 4H7.5V1.077zM4.09 4a9.267 9.267 0 0 1 .64-1.539 6.7 6.7 0 0 1 .597-.933A7.025 7.025 0 0 0 2.255 4H4.09zm-.582 3.5c.03-.877.138-1.718.312-2.5H1.674a6.958 6.958 0 0 0-.656 2.5h2.49zM4.847 5a12.5 12.5 0 0 0-.338 2.5H7.5V5H4.847zM8.5 5v2.5h2.99a12.495 12.495 0 0 0-.337-2.5H8.5zM4.51 8.5a12.5 12.5 0 0 0 .337 2.5H7.5V8.5H4.51zm3.99 0V11h2.653c.187-.765.306-1.608.338-2.5H8.5zM5.145 12c.138.386.295.744.468 1.068.552 1.035 1.218 1.65 1.887 1.855V12H5.145zm.182 2.472a6.696 6.696 0 0 1-.597-.933A9.268 9.268 0 0 1 4.09 12H2.255a7.024 7.024 0 0 0 3.072 2.472zM3.82 11a13.652 13.652 0 0 1-.312-2.5h-2.49c.062.89.291 1.733.656 2.5H3.82zm6.853 3.472A7.024 7.024 0 0 0 13.745 12H11.91a9.27 9.27 0 0 1-.64 1.539 6.688 6.688 0 0 1-.597.933zM8.5 12v2.923c.67-.204 1.335-.82 1.887-1.855.173-.324.33-.682.468-1.068H8.5zm3.68-1h2.146c.365-.767.594-1.61.656-2.5h-2.49a13.65 13.65 0 0 1-.312 2.5zm2.802-3.5a6.959 6.959 0 0 0-.656-2.5H12.18c.174.782.282 1.623.312 2.5h2.49zM11.27 2.461c.247.464.462.98.64 1.539h1.835a7.024 7.024 0 0 0-3.072-2.472c.218.284.418.598.597.933zM10.855 4a7.966 7.966 0 0 0-.468-1.068C9.835 1.897 9.17 1.282 8.5 1.077V4h2.355z" />
+                            </svg>
+                            site
+                        </a>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <article class="cartao">
+                <a class="cartao__cabecalho" role="button" data-bs-toggle="collapse" href="#collapsesass"
+                    aria-expanded="false">
+                    CSS Sass e Compass
+                </a>
+                <div class="collapse" id="collapsesass">
+                    <div class="card card-body cartao__corpo">
+                        <h4 class="cartao__titulo">CSS Sass e Compass: Descomplicando o CSS</h4>
+                        <h6 class="cartao__subtitulo">8 horas - Dez/2020</h6>
+                        <ul class="list-group list-group-flush cartao__lista">
+                            <li class="list-group-item cartao__lista__item">Ambiente - instalação</li>
+                            <li class="list-group-item cartao__lista__item">Variaveis</li>
+                            <li class="list-group-item cartao__lista__item">Aninhamento</li>
+                            <li class="list-group-item cartao__lista__item">Funções de cores</li>
+                            <li class="list-group-item cartao__lista__item">Mixins e Imports</li>
+                            <li class="list-group-item cartao__lista__item">Extend e placeholder</li>
+                            <li class="list-group-item cartao__lista__item">Functions</li>
+                            <li class="list-group-item cartao__lista__item">Media queries</li>
+                            <li class="list-group-item cartao__lista__item">Compass - instalação e configuração
+                            </li>
+                            <li class="list-group-item cartao__lista__item">Sprites</li>
+                            <li class="list-group-item cartao__lista__item">Operações matemáticas</li>
+                            <li class="list-group-item cartao__lista__item">Boas práticas e conselhos</li>
+                        </ul>
+                        <div class="cartao__links">
+                            <a href="https://github.com/mardemor/alura-sass" class="cartao__links__item"
+                                target="_blank">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-github" viewBox="0 0 16 16">
+                                    <path
+                                        d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z" />
+                                </svg>
+                                código
+                            </a>
+                            <a href="https://mardemor.github.io/alura-sass/" class="cartao__links__item"
+                                target="_blank">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-globe" viewBox="0 0 16 16">
+                                <path
+                                    d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm7.5-6.923c-.67.204-1.335.82-1.887 1.855A7.97 7.97 0 0 0 5.145 4H7.5V1.077zM4.09 4a9.267 9.267 0 0 1 .64-1.539 6.7 6.7 0 0 1 .597-.933A7.025 7.025 0 0 0 2.255 4H4.09zm-.582 3.5c.03-.877.138-1.718.312-2.5H1.674a6.958 6.958 0 0 0-.656 2.5h2.49zM4.847 5a12.5 12.5 0 0 0-.338 2.5H7.5V5H4.847zM8.5 5v2.5h2.99a12.495 12.495 0 0 0-.337-2.5H8.5zM4.51 8.5a12.5 12.5 0 0 0 .337 2.5H7.5V8.5H4.51zm3.99 0V11h2.653c.187-.765.306-1.608.338-2.5H8.5zM5.145 12c.138.386.295.744.468 1.068.552 1.035 1.218 1.65 1.887 1.855V12H5.145zm.182 2.472a6.696 6.696 0 0 1-.597-.933A9.268 9.268 0 0 1 4.09 12H2.255a7.024 7.024 0 0 0 3.072 2.472zM3.82 11a13.652 13.652 0 0 1-.312-2.5h-2.49c.062.89.291 1.733.656 2.5H3.82zm6.853 3.472A7.024 7.024 0 0 0 13.745 12H11.91a9.27 9.27 0 0 1-.64 1.539 6.688 6.688 0 0 1-.597.933zM8.5 12v2.923c.67-.204 1.335-.82 1.887-1.855.173-.324.33-.682.468-1.068H8.5zm3.68-1h2.146c.365-.767.594-1.61.656-2.5h-2.49a13.65 13.65 0 0 1-.312 2.5zm2.802-3.5a6.959 6.959 0 0 0-.656-2.5H12.18c.174.782.282 1.623.312 2.5h2.49zM11.27 2.461c.247.464.462.98.64 1.539h1.835a7.024 7.024 0 0 0-3.072-2.472c.218.284.418.598.597.933zM10.855 4a7.966 7.966 0 0 0-.468-1.068C9.835 1.897 9.17 1.282 8.5 1.077V4h2.355z" />
+                            </svg>
+                            site
+                        </a>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <article class="cartao">
+                <a class="cartao__cabecalho" role="button" data-bs-toggle="collapse" href="#collapseboots3"
+                    aria-expanded="false">
+                    CSS Bootstrap 3
+                </a>
+                <div class="collapse" id="collapseboots3">
+                    <div class="card card-body cartao__corpo">
+                        <h4 class="cartao__titulo">CSS Bootstrap 3: Criação de uma single-page responsiva</h4>
+                        <h6 class="cartao__subtitulo">12 horas - Dez/2020</h6>
+                        <ul class="list-group list-group-flush cartao__lista">
+                            <li class="list-group-item cartao__lista__item">Faça um site completo utilizando o
+                                framework Bootstrap 3.</li>
+                            <li class="list-group-item cartao__lista__item">Mantenha seu código limpo e bem
+                                feito seguindo as boas práticas do desenvolvimento
+                                HTML5.
+                            </li>
+                            <li class="list-group-item cartao__lista__item">Produza um código HTML e CSS
+                                semântico e de qualidade para que leitores de tela e
+                                robos de
+                                busca
+                                consigam ler bem o seu site.</li>
+                            <li class="list-group-item cartao__lista__item">Usa o método de desenvolvimento
+                                front-end mobile first para que suas aplicações
+                                sejam sempre
+                                responsivas, simples e funcionais independente do dispositivo.</li>
+                            <li class="list-group-item cartao__lista__item">Aprenda a usar os thumbnails,
+                                panels, jumbotron, carosel e navbar do bootstrap.</li>
+                            <li class="list-group-item cartao__lista__item">Veja como é feita uma página single
+                                page application.</li>
+                            <li class="list-group-item cartao__lista__item">Utilize a documentação do bootstrap
+                                de maneira eficaz e eficiente.</li>
+                        </ul>
+                        <div class="cartao__links">
+                            <a href="https://github.com/mardemor/alura-bootstrap3" class="cartao__links__item"
+                                target="_blank">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-github" viewBox="0 0 16 16">
+                                    <path
+                                        d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z" />
+                                </svg>
+                                código
+                            </a>
+                            <a href="https://mardemor.github.io/alura-bootstrap3/" class="cartao__links__item"
+                                target="_blank">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-globe" viewBox="0 0 16 16">
+                                <path
+                                    d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm7.5-6.923c-.67.204-1.335.82-1.887 1.855A7.97 7.97 0 0 0 5.145 4H7.5V1.077zM4.09 4a9.267 9.267 0 0 1 .64-1.539 6.7 6.7 0 0 1 .597-.933A7.025 7.025 0 0 0 2.255 4H4.09zm-.582 3.5c.03-.877.138-1.718.312-2.5H1.674a6.958 6.958 0 0 0-.656 2.5h2.49zM4.847 5a12.5 12.5 0 0 0-.338 2.5H7.5V5H4.847zM8.5 5v2.5h2.99a12.495 12.495 0 0 0-.337-2.5H8.5zM4.51 8.5a12.5 12.5 0 0 0 .337 2.5H7.5V8.5H4.51zm3.99 0V11h2.653c.187-.765.306-1.608.338-2.5H8.5zM5.145 12c.138.386.295.744.468 1.068.552 1.035 1.218 1.65 1.887 1.855V12H5.145zm.182 2.472a6.696 6.696 0 0 1-.597-.933A9.268 9.268 0 0 1 4.09 12H2.255a7.024 7.024 0 0 0 3.072 2.472zM3.82 11a13.652 13.652 0 0 1-.312-2.5h-2.49c.062.89.291 1.733.656 2.5H3.82zm6.853 3.472A7.024 7.024 0 0 0 13.745 12H11.91a9.27 9.27 0 0 1-.64 1.539 6.688 6.688 0 0 1-.597.933zM8.5 12v2.923c.67-.204 1.335-.82 1.887-1.855.173-.324.33-.682.468-1.068H8.5zm3.68-1h2.146c.365-.767.594-1.61.656-2.5h-2.49a13.65 13.65 0 0 1-.312 2.5zm2.802-3.5a6.959 6.959 0 0 0-.656-2.5H12.18c.174.782.282 1.623.312 2.5h2.49zM11.27 2.461c.247.464.462.98.64 1.539h1.835a7.024 7.024 0 0 0-3.072-2.472c.218.284.418.598.597.933zM10.855 4a7.966 7.966 0 0 0-.468-1.068C9.835 1.897 9.17 1.282 8.5 1.077V4h2.355z" />
+                            </svg>
+                            site
+                        </a>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <article class="cartao">
+                <a class="cartao__cabecalho" role="button" data-bs-toggle="collapse" href="#collapseboots4"
+                    aria-expanded="false">
+                    CSS Bootstrap 4
+                </a>
+                <div class="collapse" id="collapseboots4">
+                    <div class="card card-body cartao__corpo">
+                        <h4 class="cartao__titulo">CSS Bootstrap 4: Criando uma landing page responsiva</h4>
+                        <h6 class="cartao__subtitulo">8 horas - Dez/2020</h6>
+                        <ul class="list-group list-group-flush cartao__lista">
+                            <li class="list-group-item cartao__lista__item">Mantenha seu código limpo e bem
+                                feito seguindo as boas práticas do desenvolvimento HTML5,
+                                agilizando
+                                seu desenvolvimento.</li>
+                            <li class="list-group-item cartao__lista__item">Utilize os componentes prontos de
+                                navbar, carrossel, cards e modais para criar sites
+                                responsivos
+                                automaticamente.</li>
+                            <li class="list-group-item cartao__lista__item">Use o método de desenvolvimento
+                                front-end para que suas aplicações sejam sempre responsivas,
+                                simples
+                                e funcionais independente do dispositivo.</li>
+                            <li class="list-group-item cartao__lista__item">Produza um código HTML e CSS
+                                semântico e de qualidade para que leitores de tela e robôs de
+                                busca
+                                consigam ler bem o seu site.</li>
+                            <li class="list-group-item cartao__lista__item">Padronize os componentes de seu
+                                site ou aplicação web.</li>
+                        </ul>
+                        <div class="cartao__links">
+                            <a href="https://github.com/mardemor/alura-bootstrap4" class="cartao__links__item"
+                                target="_blank">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-github" viewBox="0 0 16 16">
+                                    <path
+                                        d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z" />
+                                </svg>
+                                código
+                            </a>
+                            <a href="https://mardemor.github.io/alura-bootstrap4/" class="cartao__links__item"
+                                target="_blank">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-globe" viewBox="0 0 16 16">
+                                <path
+                                    d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm7.5-6.923c-.67.204-1.335.82-1.887 1.855A7.97 7.97 0 0 0 5.145 4H7.5V1.077zM4.09 4a9.267 9.267 0 0 1 .64-1.539 6.7 6.7 0 0 1 .597-.933A7.025 7.025 0 0 0 2.255 4H4.09zm-.582 3.5c.03-.877.138-1.718.312-2.5H1.674a6.958 6.958 0 0 0-.656 2.5h2.49zM4.847 5a12.5 12.5 0 0 0-.338 2.5H7.5V5H4.847zM8.5 5v2.5h2.99a12.495 12.495 0 0 0-.337-2.5H8.5zM4.51 8.5a12.5 12.5 0 0 0 .337 2.5H7.5V8.5H4.51zm3.99 0V11h2.653c.187-.765.306-1.608.338-2.5H8.5zM5.145 12c.138.386.295.744.468 1.068.552 1.035 1.218 1.65 1.887 1.855V12H5.145zm.182 2.472a6.696 6.696 0 0 1-.597-.933A9.268 9.268 0 0 1 4.09 12H2.255a7.024 7.024 0 0 0 3.072 2.472zM3.82 11a13.652 13.652 0 0 1-.312-2.5h-2.49c.062.89.291 1.733.656 2.5H3.82zm6.853 3.472A7.024 7.024 0 0 0 13.745 12H11.91a9.27 9.27 0 0 1-.64 1.539 6.688 6.688 0 0 1-.597.933zM8.5 12v2.923c.67-.204 1.335-.82 1.887-1.855.173-.324.33-.682.468-1.068H8.5zm3.68-1h2.146c.365-.767.594-1.61.656-2.5h-2.49a13.65 13.65 0 0 1-.312 2.5zm2.802-3.5a6.959 6.959 0 0 0-.656-2.5H12.18c.174.782.282 1.623.312 2.5h2.49zM11.27 2.461c.247.464.462.98.64 1.539h1.835a7.024 7.024 0 0 0-3.072-2.472c.218.284.418.598.597.933zM10.855 4a7.966 7.966 0 0 0-.468-1.068C9.835 1.897 9.17 1.282 8.5 1.077V4h2.355z" />
+                            </svg>
+                            site
+                        </a>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <article class="cartao">
+                <a class="cartao__cabecalho" role="button" data-bs-toggle="collapse" href="#collapsejsbasico"
+                    aria-expanded="false">
+                    JavaScript Básico
+                </a>
+                <div class="collapse" id="collapsejsbasico">
+                    <div class="card card-body cartao__corpo">
+                        <h4 class="cartao__titulo">Primeiros passos com a linguagem</h4>
+                        <h6 class="cartao__subtitulo">10 horas - Jan/2021</h6>
+                        <ul class="list-group list-group-flush cartao__lista">
+                            <li class="list-group-item cartao__lista__item">Execute código JS em sua máquina
+                            </li>
+                            <li class="list-group-item cartao__lista__item">Aprenda a usar o VSCode e seu
+                                Debbuger</li>
+                            <li class="list-group-item cartao__lista__item">Saiba como funciona variáveis,
+                                controle de fluxo, condicionais e laços de repetição
+                            </li>
+                            <li class="list-group-item cartao__lista__item">Conheças os tipos básicos dentro do
+                                JS</li>
+                        </ul>
+                    </div>
+                </div>
+            </article>
+
+            <article class="cartao">
+                <a class="cartao__cabecalho" role="button" data-bs-toggle="collapse" href="#collapsejsmedio"
+                    aria-expanded="false">
+                    JavaScript Intermediario
+                </a>
+                <div class="collapse" id="collapsejsmedio">
+                    <div class="card card-body cartao__corpo">
+                        <h4 class="cartao__titulo">Programando na linguagem da web</h4>
+                        <h6 class="cartao__subtitulo">20 horas - Jan/2021</h6>
+                        <ul class="list-group list-group-flush cartao__lista">
+                            <li class="list-group-item cartao__lista__item">Entenda mais como funciona esta
+                                popular linguagem do mercado</li>
+                            <li class="list-group-item cartao__lista__item">Variáveis e Operadores</li>
+                            <li class="list-group-item cartao__lista__item">Arrays, Loop e Estilos</li>
+                            <li class="list-group-item cartao__lista__item">Aprenda a manipular os elementos de
+                                sua página</li>
+                            <li class="list-group-item cartao__lista__item">Trabalhe bem com eventos do
+                                navegador</li>
+                            <li class="list-group-item cartao__lista__item">Entenda como utilizar e validar
+                                formulários</li>
+                            <li class="list-group-item cartao__lista__item">Remoção, Delegação e Animação</li>
+                            <li class="list-group-item cartao__lista__item">Filtrando uma tabela</li>
+                            <li class="list-group-item cartao__lista__item">Conheça boas práticas de
+                                organização de código Javascript</li>
+                            <li class="list-group-item cartao__lista__item">Busque dados em outro servidor com
+                                AJAX</li>
+                        </ul>
+                        <div class="cartao__links">
+                            <a href="https://github.com/mardemor/alura-javascript" class="cartao__links__item"
+                                target="_blank">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-github" viewBox="0 0 16 16">
+                                    <path
+                                        d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z" />
+                                </svg>
+                                código
+                            </a>
+                            <a href="https://mardemor.github.io/alura-javascript/" class="cartao__links__item"
+                                target="_blank">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-globe" viewBox="0 0 16 16">
+                                <path
+                                    d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm7.5-6.923c-.67.204-1.335.82-1.887 1.855A7.97 7.97 0 0 0 5.145 4H7.5V1.077zM4.09 4a9.267 9.267 0 0 1 .64-1.539 6.7 6.7 0 0 1 .597-.933A7.025 7.025 0 0 0 2.255 4H4.09zm-.582 3.5c.03-.877.138-1.718.312-2.5H1.674a6.958 6.958 0 0 0-.656 2.5h2.49zM4.847 5a12.5 12.5 0 0 0-.338 2.5H7.5V5H4.847zM8.5 5v2.5h2.99a12.495 12.495 0 0 0-.337-2.5H8.5zM4.51 8.5a12.5 12.5 0 0 0 .337 2.5H7.5V8.5H4.51zm3.99 0V11h2.653c.187-.765.306-1.608.338-2.5H8.5zM5.145 12c.138.386.295.744.468 1.068.552 1.035 1.218 1.65 1.887 1.855V12H5.145zm.182 2.472a6.696 6.696 0 0 1-.597-.933A9.268 9.268 0 0 1 4.09 12H2.255a7.024 7.024 0 0 0 3.072 2.472zM3.82 11a13.652 13.652 0 0 1-.312-2.5h-2.49c.062.89.291 1.733.656 2.5H3.82zm6.853 3.472A7.024 7.024 0 0 0 13.745 12H11.91a9.27 9.27 0 0 1-.64 1.539 6.688 6.688 0 0 1-.597.933zM8.5 12v2.923c.67-.204 1.335-.82 1.887-1.855.173-.324.33-.682.468-1.068H8.5zm3.68-1h2.146c.365-.767.594-1.61.656-2.5h-2.49a13.65 13.65 0 0 1-.312 2.5zm2.802-3.5a6.959 6.959 0 0 0-.656-2.5H12.18c.174.782.282 1.623.312 2.5h2.49zM11.27 2.461c.247.464.462.98.64 1.539h1.835a7.024 7.024 0 0 0-3.072-2.472c.218.284.418.598.597.933zM10.855 4a7.966 7.966 0 0 0-.468-1.068C9.835 1.897 9.17 1.282 8.5 1.077V4h2.355z" />
+                            </svg>
+                            site
+                        </a>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <article class="cartao">
+                <a class="cartao__cabecalho" role="button" data-bs-toggle="collapse" href="#collapsejspoo"
+                    aria-expanded="false">
+                    JavaScript POO
+                </a>
+                <div class="collapse" id="collapsejspoo">
+                    <div class="card card-body cartao__corpo">
+                        <h4 class="cartao__titulo">Parte 1: Programando a Orientação a Objetos</h4>
+                        <h6 class="cartao__subtitulo">10 horas - Jan/2021</h6>
+                        <ul class="list-group list-group-flush cartao__lista">
+                            <li class="list-group-item cartao__lista__item">Domine o paradigma de programação
+                                mais usado no mercado</li>
+                            <li class="list-group-item cartao__lista__item">Entenda o que são referências e
+                                objetos</li>
+                            <li class="list-group-item cartao__lista__item">Use atributos, métodos da instância
+                                e da classe</li>
+                            <li class="list-group-item cartao__lista__item">Defina objetos através de
+                                construtores</li>
+                            <li class="list-group-item cartao__lista__item">Aprenda sobre encapsulamento</li>
+                        </ul>
+                        <h4 class="cartao__titulo">Parte 2: Interfaces e Herança em Orientação a Objetos
+                        </h4>
+                        <h6 class="cartao__subtitulo">12 horas - Jan/2021</h6>
+                        <ul class="list-group list-group-flush cartao__lista">
+                            <li class="list-group-item cartao__lista__item">Aprofunde seus conhecimentos em
+                                Orientação a objetos</li>
+                            <li class="list-group-item cartao__lista__item">Saiba o que é o "DuckType"</li>
+                            <li class="list-group-item cartao__lista__item">Entenda quando e como usar herança
+                                dentro de seus projetos</li>
+                            <li class="list-group-item cartao__lista__item">Conheça boas práticas de
+                                programação</li>
+                            <li class="list-group-item cartao__lista__item">Veja código JavaScript moderno que
+                                você pode utilizar em seus projetos</li>
+                        </ul>
+                        <div class="cartao__links">
+                            <a href="https://github.com/mardemor/alura-javascript-oo" class="cartao__links__item"
+                                target="_blank">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-github" viewBox="0 0 16 16">
+                                    <path
+                                        d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z" />
+                                </svg>
+                                código
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <article class="cartao">
+                <a class="cartao__cabecalho" role="button" data-bs-toggle="collapse" href="#collapsejsavancado"
+                    aria-expanded="false">
+                    JavaScript Avançado
+                </a>
+                <div class="collapse" id="collapsejsavancado">
+                    <div class="card card-body cartao__corpo">
+                        <h4 class="cartao__titulo">Parte 1: Conhecendo o Browser e padrões de projeto</h4>
+                        <h6 class="cartao__subtitulo">12 horas - Jan/2021</h6>
+                        <ul class="list-group list-group-flush cartao__lista">
+                            <li class="list-group-item cartao__lista__item">Una o paradigma orientado a objetos
+                                ao funcional para resolver problemas</li>
+                            <li class="list-group-item cartao__lista__item">Aplique novos recursos do
+                                ECMASCRIPT 6</li>
+                            <li class="list-group-item cartao__lista__item">Boas Práticas</li>
+                            <li class="list-group-item cartao__lista__item">Padrões de projeto</li>
+                        </ul>
+                        <h4 class="cartao__titulo">Parte 2: Aprofundando em MVC, padrão Proxy e Factory</h4>
+                        <h6 class="cartao__subtitulo">12 horas - Jan/2021</h6>
+                        <ul class="list-group list-group-flush cartao__lista">
+                            <li class="list-group-item cartao__lista__item">Estruture sua aplicação no modelo
+                                MVC</li>
+                            <li class="list-group-item cartao__lista__item">Programe assincronamente com
+                                promises</li>
+                            <li class="list-group-item cartao__lista__item">Utilize padrões de projeto</li>
+                            <li class="list-group-item cartao__lista__item">Padrão Factory</li>
+                            <li class="list-group-item cartao__lista__item">Padrão Proxy</li>
+                            <li class="list-group-item cartao__lista__item">Implemente uma solução de Data
+                                Binding</li>
+                        </ul>
+                        <h4 class="cartao__titulo">Parte 3: Salvando dados localmente com IndexedDB</h4>
+                        <h6 class="cartao__subtitulo">12 horas - Jan/2021</h6>
+                        <ul class="list-group list-group-flush cartao__lista">
+                            <li class="list-group-item cartao__lista__item">Aprenda a armazenar dados offline
+                                com IndexedDB</li>
+                            <li class="list-group-item cartao__lista__item">Encante-se com a Fetch API</li>
+                            <li class="list-group-item cartao__lista__item">Use Babel e garanta compatibilidade
+                                máxima de seu código</li>
+                            <li class="list-group-item cartao__lista__item">Use e entenda as vantagens do
+                                ECMASCRIPT 2015 (ES2015) modules</li>
+                            <li class="list-group-item cartao__lista__item">Torne seu código ainda mais
+                                elegante com novos padrões de projeto</li>
+                        </ul>
+                        <div class="cartao__links">
+                            <a href="https://github.com/mardemor/alura-javascript-avancado" class="cartao__links__item"
+                                target="_blank">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-github" viewBox="0 0 16 16">
+                                    <path
+                                        d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z" />
+                                </svg>
+                                código
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <article class="cartao">
+                <a class="cartao__cabecalho" role="button" data-bs-toggle="collapse" href="#collapseperformance"
+                    aria-expanded="false">
+                    Performance Web
+                </a>
+                <div class="collapse" id="collapseperformance">
+                    <div class="card card-body cartao__corpo">
+                        <h4 class="cartao__titulo">Parte 1: Entendendo a web por baixo dos panos</h4>
+                        <h6 class="cartao__subtitulo">14 horas - Jan/2021</h6>
+                        <ul class="list-group list-group-flush cartao__lista">
+                            <li class="list-group-item cartao__lista__item">Torne-se um programador web completo
+                            </li>
+                            <li class="list-group-item cartao__lista__item">Entenda os detalhes do protocolo HTTP
+                            </li>
+                            <li class="list-group-item cartao__lista__item">Saiba quando usar GET e POST</li>
+                            <li class="list-group-item cartao__lista__item">Estude sobre segurança na web e o
+                                HTTPS
+                            </li>
+                            <li class="list-group-item cartao__lista__item">A web stateful e a web stateless</li>
+                            <li class="list-group-item cartao__lista__item">Conheça as melhorias do HTTP/2</li>
+                        </ul>
+                        <h4 class="cartao__titulo">Parte 2: Otimizando o front-end</h4>
+                        <h6 class="cartao__subtitulo">20 horas - Jan/2021</h6>
+                        <ul class="list-group list-group-flush cartao__lista">
+                            <li class="list-group-item cartao__lista__item">Otimize a performance de carregamento
+                                das suas páginas</li>
+                            <li class="list-group-item cartao__lista__item">Entenda os gargalos de performance e
+                                como resolvê-los</li>
+                            <li class="list-group-item cartao__lista__item">Veja técnicas para diminuir o tráfego
+                                de suas páginas</li>
+                            <li class="list-group-item cartao__lista__item">Faça sites com menos requests</li>
+                            <li class="list-group-item cartao__lista__item">Automatize suas otimizações com gulp
+                            </li>
+                            <li class="list-group-item cartao__lista__item">Analise suas páginas com as
+                                ferramentas
+                                do mercado</li>
+                            <li class="list-group-item cartao__lista__item">Converta mais usuários com sites mais
+                                rápidos</li>
+                        </ul>
+                        <h4 class="cartao__titulo">Parte 3: Critical Path, HTTP/2 e Resource Hints</h4>
+                        <h6 class="cartao__subtitulo">20 horas - Jan/2021</h6>
+                        <ul class="list-group list-group-flush cartao__lista">
+                            <li class="list-group-item cartao__lista__item">Otimize o Critical Path da página
+                                para
+                                ultra performance</li>
+                            <li class="list-group-item cartao__lista__item">Aprenda a fazer carregamento
+                                assíncrono
+                                e lazy load</li>
+                            <li class="list-group-item cartao__lista__item">Conheça a nova versão do HTTP/2 e
+                                como
+                                as práticas de front-end são afetadas</li>
+                            <li class="list-group-item cartao__lista__item">Use Resource Hints para antecipar
+                                otimizações para os usuários</li>
+                            <li class="list-group-item cartao__lista__item">Analise a performance com
+                                WebPageTeste
+                                e PageSpeed Insights</li>
+                            <li class="list-group-item cartao__lista__item">Otimize um projeto prático do início
+                                ao
+                                fim!</li>
+                        </ul>
+                    </div>
+                </div>
+            </article>
+
+        </section>
+
+    </main>
+
+    <footer class="rodape">
+        mardemor.github.io/curriculo
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js"
+        integrity="sha384-KsvD1yqQ1/1+IA7gi3P0tyJcT3vR+NdBTt13hSJ2lnve8agRGXTTyNaBYmCR/Nwi"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.min.js"
+        integrity="sha384-nsg8ua9HAw1y0W1btsyWgBklPnCUAFLuTMS2G72MMONqmOymq585AcH49TLBQObG"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

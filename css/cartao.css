@@ -1,0 +1,73 @@
+article.cartao {
+    margin-bottom: 1rem;
+}
+
+section.cartao {
+    margin-bottom: 2rem;
+}
+
+.cartao__cabecalho {
+    padding: .5rem 1rem;
+    display: block;
+    text-align: left;
+    text-decoration: none;
+    background-color: #333366;
+    color: #DDDDDD;
+    border-radius: 5px;
+    transition: 300ms; 
+}
+
+a.cartao__cabecalho:hover {
+    color: #FFFFFF;
+}
+
+.cartao__corpo {
+    border: none;
+    padding: 1rem 2rem;
+}
+
+.cartao__titulo {
+    color: #FF8800;
+    margin: 1rem 0;
+}
+
+.cartao__subtitulo {
+    color: #AAAAAA;
+    margin-bottom: 1rem;
+}
+
+.cartao__lista {
+    margin-bottom: 1rem;
+}
+
+.cartao__lista__item {
+    color: #333333;
+}
+
+.cartao__etiqueta {
+    color: #CCCCCC;
+}
+.cartao__etiqueta::after {
+    content: ": ";
+}
+
+.cartao__links {
+    text-align: right;
+}
+
+.cartao__links__item {
+    color: #FFFFFF;
+    background-color: #FFAA00;
+    display: inline-block;
+    width: 100px;
+    margin-left: 1rem;
+    padding: .2rem 1rem;
+    border-radius: 5px;
+    text-decoration: none;
+    text-align: center;
+}
+
+.cartao__links__item:hover {
+    background-color: #FF8800;
+    color: #FFFFFF;
+}

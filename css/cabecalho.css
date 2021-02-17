@@ -1,0 +1,7 @@
+.cabecalho {
+    grid-area: cabecalho;
+}
+
+.cabecalho__menu {
+    background-color: #555555;
+}

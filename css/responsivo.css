@@ -1,0 +1,31 @@
+@media (max-width: 576px) {
+    body {
+        display: flex;
+        flex-direction: column;
+    }
+    .perfil {
+        margin: 0;
+        width: 100%;
+    }
+    .principal {
+        margin: 0;
+        width: 100%;
+        padding: 1rem 1rem;
+        font-size: .9rem;
+    }
+    .titulo-secundario {
+        text-align: center;
+    }
+    .perfil__habilidades {
+        color: #000033;
+    }
+    .cartao__corpo {
+        padding: 1rem 1rem;
+    }
+    .cartao__etiqueta {
+        display: block;
+    }
+    .cartao__etiqueta::after {
+        content: "";
+    }
+}

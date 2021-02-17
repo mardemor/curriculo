@@ -1,0 +1,7 @@
+.rodape {
+    grid-area: rodape;
+    background-color: #555555;
+    color: #DDDDDD;
+    padding: 1rem;
+    text-align: center;
+}
