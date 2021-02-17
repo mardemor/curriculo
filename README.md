@@ -1,1 +1,1 @@
-<a href="https://mardemor.github.io/curriculo/">Acesse</a>
+Acesse meu <a href="https://mardemor.github.io/curriculo/">curriculo</a>.
