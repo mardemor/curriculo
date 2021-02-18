@@ -4,6 +4,7 @@ article.cartao {
 
 section.cartao {
     margin-bottom: 2rem;
+    box-shadow: 1px 1px 10px 1px lightgray;
 }
 
 .cartao__cabecalho {
@@ -46,6 +47,7 @@ a.cartao__cabecalho:hover {
 
 .cartao__etiqueta {
     color: #CCCCCC;
+    width: 100px;
 }
 .cartao__etiqueta::after {
     content: ": ";
@@ -59,7 +61,7 @@ a.cartao__cabecalho:hover {
     color: #FFFFFF;
     background-color: #FFAA00;
     display: inline-block;
-    width: 100px;
+    width: 110px;
     margin-left: 1rem;
     padding: .2rem 1rem;
     border-radius: 5px;

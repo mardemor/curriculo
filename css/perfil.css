@@ -2,7 +2,7 @@
     grid-area: perfil;
     background: linear-gradient(#000033, #F0F0F0);
     color: #DDDDDD;
-    padding: 2rem;
+    padding: 3rem 2rem;
     text-align: center;
 }
 
@@ -11,17 +11,13 @@
     height: 180px;
     object-fit: cover;
     border-radius: 100%;
-    margin: 1rem 0;
+    margin-bottom: 2rem;
 }
 
-.perfil__titulo {
-    margin: 2rem 0;
+.perfil__titulo, .perfil__descricao, .perfil__habilidades, .perfil__hobbies {
+    margin-bottom: 3rem;
 }
 
-.perfil__descricao {
-    margin: 2rem 0;
-}
-
-.perfil__habilidades {
-    margin: 2rem 0;
+.perfil__subtitulo {
+    margin: 0;
 }

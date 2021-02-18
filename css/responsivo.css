@@ -1,4 +1,4 @@
-@media (max-width: 576px) {
+@media (max-width: 767px) {
     body {
         display: flex;
         flex-direction: column;
@@ -11,12 +11,11 @@
         margin: 0;
         width: 100%;
         padding: 1rem 1rem;
-        font-size: .9rem;
     }
     .titulo-secundario {
         text-align: center;
     }
-    .perfil__habilidades {
+    .perfil__habilidades, .perfil__hobbies, .perfil__subtitulo {
         color: #000033;
     }
     .cartao__corpo {
@@ -27,5 +26,16 @@
     }
     .cartao__etiqueta::after {
         content: "";
+    }
+}
+
+@media (max-width: 376px) {
+    .principal {
+        font-size: .9rem;
+    }
+    .cartao__links__item {
+        display: block;
+        margin: 1rem 0;
+        width: 100%;
     }
 }
