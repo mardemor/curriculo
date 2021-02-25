@@ -1,7 +1,7 @@
 .perfil {
     grid-area: perfil;
-    background: linear-gradient(#000033, #F0F0F0);
-    color: #DDDDDD;
+    background: linear-gradient(var(--azul-escuro), var(--branco-escuro));
+    color: var(--cinza-claro);
     padding: 3rem 2rem;
     text-align: center;
 }

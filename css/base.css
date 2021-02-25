@@ -1,3 +1,15 @@
+:root {
+    --branco: #FFF;
+    --branco-escuro: #F0F0F0;
+    --cinza-escuro: #444;
+    --cinza-medio: #AAA;
+    --cinza-claro: #CCC;
+    --azul-escuro: #003;
+    --azul-medio: #336;
+    --laranja-claro: #FB0;
+    --laranja-escuro:#F80;
+}
+
 body {
     display: grid;
     grid-template-areas: 
@@ -5,6 +17,6 @@ body {
         'principal principal perfil'
         'rodape rodape rodape';
     grid-template-columns: 1fr 1fr 1fr;
-    font-family: Roboto, sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-size: 16px;
 }

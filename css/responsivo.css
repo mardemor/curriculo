@@ -16,7 +16,7 @@
         text-align: center;
     }
     .perfil__habilidades, .perfil__hobbies, .perfil__subtitulo {
-        color: #000033;
+        color: var(--azul-escuro);
     }
     .cartao__corpo {
         padding: 1rem 1rem;

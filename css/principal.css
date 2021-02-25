@@ -1,12 +1,12 @@
 .principal {
     grid-area: principal;
-    background-color: #F0F0F0;
-    color: #000033;
+    background-color: var(--branco-escuro);
+    color: var(--azul-escuro);
     padding: 2rem 2rem;
 }
 
 .titulo-secundario {
     margin: 2rem 0;
-    color: #BBBBBB;
+    color: var(--cinza-medio);
     font-size: 1.8rem;
 }
