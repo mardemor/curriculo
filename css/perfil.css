@@ -14,10 +14,21 @@
     margin-bottom: 2rem;
 }
 
-.perfil__titulo, .perfil__descricao, .perfil__habilidades, .perfil__hobbies {
+.perfil__titulo, .perfil__descricao, .perfil__habilidades, .perfil__hobbies, .perfil__valores {
     margin-bottom: 3rem;
 }
 
 .perfil__subtitulo {
-    margin: 0;
+    margin-bottom: 1rem;
+    font-size: 1.25rem;
+}
+
+@media (max-width: 767px) {
+    .perfil {
+        margin: 0;
+        width: 100%;
+    }
+    .perfil__habilidades, .perfil__hobbies, .perfil__subtitulo, .perfil__valores {
+        color: var(--azul-escuro);
+    }
 }

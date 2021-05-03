@@ -15,21 +15,50 @@ section.cartao {
     background-color: var(--azul-medio);
     color: var(--cinza-claro);
     border-radius: 5px;
-    transition: 300ms; 
+    transition: 300ms;
+    margin: 0;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+.cartao__cabecalho__curso {
+    padding: .5rem 1rem;
+    display: block;
+    text-align: left;
+    text-decoration: none;
+    background-color: var(--branco-escuro);
+    color: var(--azul-escuro);
+    border: solid 1px;
+    border-radius: 5px;
+    transition: 300ms;
+    margin: 0;
+    font-size: 1rem;
+    line-height: 1.5;
 }
 
 a.cartao__cabecalho:hover {
     color: var(--branco);
 }
 
+a.cartao__cabecalho__curso:hover {
+    color: var(--azul-claro);
+}
+
 .cartao__corpo {
     border: none;
     padding: 1rem 2rem;
+    background-color: var(--branco);
+}
+
+.cartao__corpo__curso {
+    background-color: var(--branco-escuro);
+    border: none;
 }
 
 .cartao__titulo {
     color: var(--laranja-escuro);
     margin: 1rem 0;
+    font-size: 1.5rem;
 }
 
 .cartao__subtitulo {
@@ -43,6 +72,12 @@ a.cartao__cabecalho:hover {
 
 .cartao__lista__item {
     color: var(--cinza-escuro);
+    background-color: var(--branco);
+}
+
+.cartao__lista__item__curso {
+    color: var(--cinza-escuro);
+    background-color: var(--branco-escuro);
 }
 
 .cartao__etiqueta {
@@ -73,4 +108,24 @@ a.cartao__cabecalho:hover {
 .cartao__links__item:hover {
     background-color: var(--laranja-claro);
     color: var(--branco);
+}
+
+@media (max-width: 767px) {
+    .cartao__corpo {
+        padding: 1rem 1rem;
+    }
+    .cartao__etiqueta {
+        display: block;
+    }
+    .cartao__etiqueta::after {
+        content: "";
+    }
+}
+
+@media (max-width: 376px) {
+    .cartao__links__item {
+        display: block;
+        margin: 1rem 0;
+        width: 100%;
+    }
 }

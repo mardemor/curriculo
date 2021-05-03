@@ -6,6 +6,7 @@
     --cinza-claro: #CCC;
     --azul-escuro: #003;
     --azul-medio: #336;
+    --azul-claro: #669;
     --laranja-claro: #FB0;
     --laranja-escuro:#F80;
 }
@@ -19,4 +20,11 @@ body {
     grid-template-columns: 1fr 1fr 1fr;
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
+}
+
+@media (max-width: 767px) {
+    body {
+        display: flex;
+        flex-direction: column;
+    }
 }

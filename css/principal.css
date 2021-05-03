@@ -7,6 +7,23 @@
 
 .titulo-secundario {
     margin: 2rem 0;
-    color: var(--cinza-medio);
+    color: var(--azul-medio);
     font-size: 1.8rem;
+}
+
+@media (max-width: 767px) {
+    .principal {
+        margin: 0;
+        width: 100%;
+        padding: 1rem 1rem;
+    }
+    .titulo-secundario {
+        text-align: center;
+    }
+}
+
+@media (max-width: 376px) {
+    .principal {
+        font-size: .9rem;
+    }
 }
